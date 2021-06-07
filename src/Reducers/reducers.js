@@ -1,4 +1,4 @@
-import { GET_CITY, ON_CLOSE } from '../Actions/actions';
+import { GET_CITY, ON_CLOSE } from '../Actions/action';
 const initialState = {
     cityGet: []
 }
@@ -9,9 +9,8 @@ function rootReducers(state=initialState, action){
         case GET_CITY:
             return{
                 cityGet: state.cityGet.filter(el => el.id === action.payload.id).length > 0 ? [... state.cityGet, null]  :
-                state.cityGet.concat(action.payload) /* Asi si funciona. */
-                /* cityGet:[...action.payload]  NO FUNCIONA*/
-                /* ...state, cityGet:[...action.payload] TAMPOCO */    /* POR QUE NO HACE FALTA DECIRLE DE DONDE VIENE ESE CITYgET */
+                state.cityGet.concat(action.payload) 
+                
             }
 
         case ON_CLOSE:
