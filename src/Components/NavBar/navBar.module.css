@@ -1,0 +1,22 @@
+.padher{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.img{
+    position: relative;
+    left: 3rem;
+}
+
+.btn{
+    background-color: #8e9775;
+    width: 4rem;
+    height: 1.8rem;
+    border-radius: 99px;
+    border: none;
+    cursor: pointer;
+}
